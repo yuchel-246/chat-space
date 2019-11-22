@@ -1,0 +1,34 @@
+.chat-main
+  .main__header
+    .left-box
+      .header__group_name
+        soccer
+      .header__member_names
+        Member : yuya,taro
+    .edit
+      = link_to "#", class: "edit__btn" do
+        Edit
+    
+  .messages__main
+    .message__sender-a
+      yuya
+    .message__date-a
+      2019/11/20(Wed) 17:50:30
+    .message__details-a
+      こんにちは
+    .message__sender-b
+      taro
+    .message__date-b
+      2019/11/20(Wed) 17:55:30
+    .message__details-b
+      さようなら
+
+  .form
+    %input{:placeholder => "type a message", :type => "text", class: "input-place"}/
+
+    %label{class: "input-box__image"}
+      = icon('fas', 'image')
+      %input{type: "file", class: "textbox"} 
+      %input{type:"submit",Value:"send", class:"send__btn"}
+
+
