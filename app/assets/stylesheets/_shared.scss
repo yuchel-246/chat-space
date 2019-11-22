@@ -19,11 +19,11 @@
       margin-right: auto;
     }
     
-    .headers__btn-a{
+    .headers__btn-top{
       text-indent: -30px;
       color:white;
     }
-    .headers__btn-b{
+    .headers__btn-bottom{
       text-indent: -20px;
       color: white;
     }
@@ -34,7 +34,7 @@
     color: #ffffff;
     font-weight: bold;
     height: 100%;
-    .group-a{
+    .group-soccer{
       padding-top: 20px;
     }
       &__name-top{
@@ -44,7 +44,7 @@
         font-size: 11px;
         padding-top: 5px;
       }
-    .group-b{
+    .group-baseball{
       padding-top: 40px;
     }
       &__name-bottom{
@@ -98,34 +98,34 @@
 
   .messages__main{
     text-indent: 40px;
-    .message__sender-a{
+    .message-top__sender{
       font-size: 16px;
       font-weight: bold;
       color: #434A54;
       padding-top: 46px;
     }
-    .message__date-a{
+    .message-top__date{
       font-size: 12px;
       color: #999999;
       padding-top: 46px;
     }
-    .message__details-a{
+    .message-top__details{
       font-size: 14px;
       color: #434A54;
       padding-top: 10px;
     }
-    .message__sender-b{
+    .message-bottom__sender{
       font-size: 16px;
       font-weight: bold;
       color: #434A54;
       padding-top: 40px;
     }
-    .message__date-b{
+    .message-bottom__date{
       font-size: 12px;
       color: #999999;
       padding-top: 40px;
     }
-    .message__details-b{
+    .message-bottom__details{
       font-size: 14px;
       color: #434A54;
       padding-top: 10px;
