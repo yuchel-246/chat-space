@@ -1,32 +1,34 @@
-.chat-side{
+.side-bar{
   width: 300px;
   height: 100vh;
   float: left;
-  text-indent: 20px;
 
-
-  .side_header{
+  .header{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     background-color: #253141;
     color: #FFFFFF;
     font: 16px;
-    font-weight: bold;
     padding-top: 35px;
     padding-bottom: 40px;
-
-    .header__user_name{
-      margin-right: auto;
-    }
-    
-    .headers__btn-top{
-      text-indent: -30px;
-      color:white;
-    }
-    .headers__btn-bottom{
-      text-indent: -20px;
-      color: white;
-    }
+      .header__name{
+        text-indent: 20px;
+        font-weight: bold;
+      }
+      .header__lists{
+        color: white;
+        font-weight: bold;
+        text-indent: -20px;
+        display: flex;
+        justify-content: flex-end;
+        &__setting{
+        padding-left: 20px;
+        }
+      }
+      .header__btn{
+        color: white;
+      }
+      
   }
 
   .groups{
@@ -34,30 +36,29 @@
     color: #ffffff;
     font-weight: bold;
     height: 100%;
-    .group-soccer{
+    text-indent: 20px;
+    .group-top{
       padding-top: 20px;
-    }
-      &__name-top{
-      font-size: 15px;
-      }
-      &__message-top{
-        font-size: 11px;
-        padding-top: 5px;
-      }
-    .group-baseball{
-      padding-top: 40px;
-    }
-      &__name-bottom{
+      &__name{
         font-size: 15px;
-        padding-top: 40px;
       }
-      &__message-bottom{
+      &__message{
         font-size: 11px;
         padding-top: 5px;
       }
+    }
+    .group-bottom{
+      &__name{
+        padding-top: 40px;
+        font-size: 15px;
+      }
+      &__message{
+        font-size: 11px;
+        padding-top: 5px;
+      }
+    }
   }
 }
-
 .chat-main{
   width: calc(100vw - 300px);
   height: 100vh;
