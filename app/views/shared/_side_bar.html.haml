@@ -1,24 +1,23 @@
-.chat-side
-  .side_header
-    .header__user_name
-      YUYA
-    .header__edit
-    = link_to "#", class: "headers__btn-top" do
-      = icon('fa', 'edit')
-    .header__setting
-    = link_to "#", class: "headers__btn-bottom" do
-      = icon('fa', 'cog')
-
-
+.side-bar
+  .header
+    %h3.header__name
+      = current_user.name
+    %ul.header__lists
+      %li.header__lists__edit
+        = link_to "#", class: "header__btn" do
+          = icon('fa','edit')
+      %li.header__lists__setting
+        = link_to edit_user_path(current_user), class: "header__btn" do
+          = icon('fa', 'cog')
   .groups
-    .group-soccer
-      .group-soccer__name-top
+    .group-top
+      .group-top__name
         soccer
-      .group-soccer__message-top
+      .group-top__message
         nice!
-    .group-baseball
-      .group-baseball__name-bottom
+    .group-bottom
+      .group-bottom__name
         baseball
-      .group-baseball__message-bottom
+      .group-bottom__message
         good!
 
