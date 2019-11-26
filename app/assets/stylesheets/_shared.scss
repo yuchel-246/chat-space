@@ -37,24 +37,17 @@
     font-weight: bold;
     height: 100%;
     text-indent: 20px;
-    .group-top{
+    .group{
       padding-top: 20px;
       &__name{
         font-size: 15px;
+        color: white;
       }
       &__message{
+        color: white;
         font-size: 11px;
         padding-top: 5px;
-      }
-    }
-    .group-bottom{
-      &__name{
-        padding-top: 40px;
-        font-size: 15px;
-      }
-      &__message{
-        font-size: 11px;
-        padding-top: 5px;
+        padding-bottom: 40px;
       }
     }
   }
