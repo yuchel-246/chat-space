@@ -4,20 +4,17 @@
       = current_user.name
     %ul.header__lists
       %li.header__lists__edit
-        = link_to "#", class: "header__btn" do
+        = link_to new_group_path, class: "header__btn" do
           = icon('fa','edit')
       %li.header__lists__setting
         = link_to edit_user_path(current_user), class: "header__btn" do
           = icon('fa', 'cog')
   .groups
-    .group-top
-      .group-top__name
-        soccer
-      .group-top__message
-        nice!
-    .group-bottom
-      .group-bottom__name
-        baseball
-      .group-bottom__message
-        good!
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。
 
