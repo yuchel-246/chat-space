@@ -8,6 +8,9 @@ Bundler.require(*Rails.groups)
 
 module ChatSpace
   class Application < Rails::Application
+    config.action_view.field_error_proc = Proc.new do |html_tag, instance|
+      %Q(#{html_tag}).html_safe
+    end
     config.generators do |g|
       g.stylesheets false
       g.javascripts false

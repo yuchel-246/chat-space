@@ -11,6 +11,7 @@
     font: 16px;
     padding-top: 35px;
     padding-bottom: 40px;
+    height: 25px;
       .header__name{
         text-indent: 20px;
         font-weight: bold;
@@ -35,8 +36,14 @@
     background-color: #2f3e51;
     color: #ffffff;
     font-weight: bold;
-    height: 100%;
+    height: calc(100% - 100px);
     text-indent: 20px;
+    // -webkit-box-sizing: border-box;
+    // -moz-box-sizing: border-box;
+    // -o-box-sizing: border-box;
+    // -ms-box-sizing: border-box;
+    // box-sizing: border-box;
+  }
     .group{
       padding-top: 20px;
       &__name{
@@ -50,7 +57,7 @@
         padding-bottom: 40px;
       }
     }
-  }
+  
 }
 .chat-main{
   width: calc(100vw - 300px);
@@ -63,6 +70,7 @@
     justify-content: space-between;
     border-bottom: solid;
     border-bottom-color: #eeeeee;
+    height: 100px;
     .left-box{
       text-indent: 40px;
       .header__group_name{
@@ -92,6 +100,8 @@
 
   .messages__main{
     text-indent: 40px;
+    overflow: scroll;
+    height: calc(100% - 100px - 90px);
     .message-top__sender{
       font-size: 16px;
       font-weight: bold;
@@ -132,9 +142,10 @@
     background-color: #ddd;
     height: 90px;
     width: calc(100vw - 300px);
-    text-indent: 40px;
+    text-indent: -40px;
     display: flex;
     justify-content: space-around;
+    
   
 
     .input-place{
@@ -144,26 +155,33 @@
       margin-top: 20px;
     }
 
-    .input-box__image {
-      position: absolute;
-      left: 920px;
-      top: 20px;
-      font-size: 25px;
-    }
-    .textbox{
-      display: none;
-      position: relative;
-      left: 40px;
+    .form__mask{
+      float: left;
+      .input-box__image {
+        position: absolute;
+        left: 1000px;
+        top: 30px;
+        font-size: 25px;
+
+      }
+      .textbox{
+        display: none;
+        position: relative;
+        left: 40px;
+      }
     }
     .send__btn{
       width: 100px;
       height: 50px;
       background-color: #38aef0;
       color:white;
-      font-size: 25px;
+      font-size: 15px;
+      float: right;
+      margin-top: 20px;
+      margin-left: 15px;
     }
   }
+  
 }
-
 
 
