@@ -18,8 +18,10 @@
   .message-top__date
     = message.created_at.strftime("%Y/%m/%d %H:%M")
   .message-top__details
-    = message.content
-
+    - if message.content.present?
+      %p.lower-message__content
+        = message.content
+    = image_tag message.image.url, class: 'lower-message_image' if message.image.present?
 -#     .message-bottom__sender
 -#       taro
 -#     .message-bottom__date
