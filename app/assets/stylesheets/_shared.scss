@@ -94,6 +94,7 @@
         right: 40px;
         top: 10px;
         position: absolute;
+        text-decoration: none;
       }
     }
   }
@@ -102,40 +103,41 @@
     text-indent: 40px;
     overflow: scroll;
     height: calc(100% - 100px - 90px);
-    .message-top__sender{
-      font-size: 16px;
-      font-weight: bold;
-      color: #434A54;
-      padding-top: 46px;
+    .messages {
+      .message-top__sender{
+        font-size: 16px;
+        font-weight: bold;
+        color: #434A54;
+        padding-top: 46px;
+      }
+      .message-top__date{
+        font-size: 12px;
+        color: #999999;
+        padding-top: 46px;
+      }
+      .message-top__details{
+        font-size: 14px;
+        color: #434A54;
+        padding-top: 10px;
+      }
+      .message-bottom__sender{
+        font-size: 16px;
+        font-weight: bold;
+        color: #434A54;
+        padding-top: 40px;
+      }
+      .message-bottom__date{
+        font-size: 12px;
+        color: #999999;
+        padding-top: 40px;
+      }
+      .message-bottom__details{
+        font-size: 14px;
+        color: #434A54;
+        padding-top: 10px;
+      }
     }
-    .message-top__date{
-      font-size: 12px;
-      color: #999999;
-      padding-top: 46px;
-    }
-    .message-top__details{
-      font-size: 14px;
-      color: #434A54;
-      padding-top: 10px;
-    }
-    .message-bottom__sender{
-      font-size: 16px;
-      font-weight: bold;
-      color: #434A54;
-      padding-top: 40px;
-    }
-    .message-bottom__date{
-      font-size: 12px;
-      color: #999999;
-      padding-top: 40px;
-    }
-    .message-bottom__details{
-      font-size: 14px;
-      color: #434A54;
-      padding-top: 10px;
-    }
-  }
-    
+  } 
   .form{
     bottom: 0;
     position: fixed;

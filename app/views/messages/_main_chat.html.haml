@@ -13,8 +13,7 @@
         Edit
 
   .messages__main
-    .messages
-      = render @messages
+    = render @messages
 
   .form    
     = form_for [@group, @message] do |f|
