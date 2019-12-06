@@ -11,8 +11,7 @@
 -#     = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
 
 
-
-.messages__main
+.messages{data: {message: {id: message.id}}}
   .message-top__sender
     = message.user.name
   .message-top__date
