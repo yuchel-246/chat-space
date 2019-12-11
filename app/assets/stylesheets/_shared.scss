@@ -2,6 +2,7 @@
   width: 300px;
   height: 100vh;
   float: left;
+  text-decoration: none;
 
   .header{
     display: flex;
@@ -35,7 +36,6 @@
   .groups{
     background-color: #2f3e51;
     color: #ffffff;
-    font-weight: bold;
     height: calc(100% - 100px);
     text-indent: 20px;
     // -webkit-box-sizing: border-box;
@@ -46,16 +46,19 @@
   }
     .group{
       padding-top: 20px;
-      &__name{
-        font-size: 15px;
-        color: white;
+      a{
+        text-decoration: none;
       }
-      &__message{
-        color: white;
-        font-size: 11px;
-        padding-top: 5px;
-        padding-bottom: 40px;
-      }
+        &__name{
+          font-size: 15px;
+          color: white;
+        }
+        &__message{
+          color: white;
+          font-size: 11px;
+          padding-top: 5px;
+          padding-bottom: 40px;
+        }
     }
   
 }
@@ -100,45 +103,29 @@
   }
 
   .messages__main{
-    text-indent: 40px;
     overflow: scroll;
     height: calc(100% - 100px - 90px);
     .messages {
-      .message-top{
+      padding-top: 46px;
+      .message-top-box{
+        display: flex;
         &__sender{
+          text-indent: 40px;
           font-size: 16px;
           font-weight: bold;
           color: #434A54;
-          padding-top: 46px;
         }
         &__date{
           font-size: 12px;
           color: #999999;
-          padding-top: 46px;
+          padding-left: 12px;
         }
-        &__details{
-          font-size: 14px;
-          color: #434A54;
-          padding-top: 10px;
         }
-      }
-      .message-bottom{
-        &__sender{
-          font-size: 16px;
-          font-weight: bold;
-          color: #434A54;
-          padding-top: 40px;
-        }
-        &__date{
-          font-size: 12px;
-          color: #999999;
-          padding-top: 40px;
-        }
-        &__details{
-          font-size: 14px;
-          color: #434A54;
-          padding-top: 10px;
-        }
+      .message-top__details{
+        font-size: 14px;
+        color: #434A54;
+        padding-top: 10px;
+        text-indent: 40px;
       }
     }
   } 

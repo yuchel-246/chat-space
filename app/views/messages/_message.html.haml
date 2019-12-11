@@ -12,10 +12,11 @@
 
 
 .messages{data: {message: {id: message.id}}}
-  .message-top__sender
-    = message.user.name
-  .message-top__date
-    = message.created_at.strftime("%Y/%m/%d %H:%M")
+  .message-top-box
+    .message-top-box__sender
+      = message.user.name
+    .message-top-box__date
+      = message.created_at.strftime("%Y/%m/%d %H:%M")
   .message-top__details
     - if message.content.present?
       %p.lower-message__content
