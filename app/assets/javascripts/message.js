@@ -8,11 +8,13 @@ $(function(){
 
       var html =
         ` <div class="messages" data-message-id="${message.id}">
-            <div class="message-top__sender">
-              ${message.user_name}
-            </div>
-            <div class="message-top__date">
-              ${message.date}
+            <div class="message-top-box">
+              <div class="message-top-box__sender">
+                ${message.user_name}
+              </div>
+              <div class="message-top-box__date">
+                ${message.date}
+              </div>
             </div>
             <div class="message-top__details">
               ${message.content}
