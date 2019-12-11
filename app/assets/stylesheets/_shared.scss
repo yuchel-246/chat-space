@@ -126,18 +126,21 @@
         color: #434A54;
         padding-top: 10px;
         text-indent: 40px;
+
+        }
       }
-    }
-  } 
+  }
+
   .form{
     bottom: 0;
-    position: fixed;
+    // position: fixed;
     background-color: #ddd;
     height: 90px;
     width: calc(100vw - 300px);
     text-indent: -40px;
     display: flex;
     justify-content: space-around;
+    position: relative;
     
   
 
@@ -152,14 +155,13 @@
       float: left;
       .input-box__image {
         position: absolute;
-        left: 1000px;
+        right: 150px;
         top: 30px;
         font-size: 25px;
 
       }
       .textbox{
         display: none;
-        position: relative;
         left: 40px;
       }
     }
@@ -174,7 +176,4 @@
       margin-left: 15px;
     }
   }
-  
 }
-
-

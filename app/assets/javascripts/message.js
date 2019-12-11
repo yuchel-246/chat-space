@@ -18,8 +18,10 @@ $(function(){
             </div>
             <div class="message-top__details">
               ${message.content}
-            </div>
-            ${message_image} 
+              <div class="lower-message_image">
+              ${message_image} 
+              </div>
+            </div> 
           </div>`
       return html;
     } 
